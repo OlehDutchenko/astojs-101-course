@@ -1,8 +1,14 @@
 ---
+import { type MarkdownLayoutProps } from 'astro';
 import Main from './Main.astro';
+
+interface Props
+	extends MarkdownLayoutProps<{
+		title: string;
+	}> {}
 ---
 
-<Main>
+<Main title={`${Astro.props.frontmatter.title} | Blog`}>
 	<aside>Aside</aside>
 	<div class="content">
 		<slot />

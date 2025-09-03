@@ -1,9 +1,9 @@
 ---
 layout: '@/layouts/Blog.astro'
-title: 'Beyond Technology'
+title: 'Philosophies'
 ---
 
-## Beyond Technology
+## Philosophies
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 
