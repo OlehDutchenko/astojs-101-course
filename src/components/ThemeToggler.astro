@@ -1,0 +1,25 @@
+<button aria-label="Theme toggler">Theme</button>
+
+<style>
+	button {
+		cursor: pointer;
+	}
+
+	:global(html.dark) button::before {
+		content: 'Light ';
+	}
+
+	:global(html:not(.dark)) button::before {
+		content: 'Dark ';
+	}
+</style>
+
+<script>
+	const darkClassName = 'dark';
+	const btn = document.querySelector('button[aria-label="Theme toggler"]');
+	if (btn) {
+		btn.addEventListener('click', () => {
+			document.documentElement.classList.toggle(darkClassName);
+		});
+	}
+</script>
