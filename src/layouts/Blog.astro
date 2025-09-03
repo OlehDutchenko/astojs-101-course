@@ -1,0 +1,24 @@
+---
+import Main from './Main.astro';
+---
+
+<Main>
+	<aside>Aside</aside>
+	<div class="content">
+		<slot />
+	</div>
+</Main>
+
+<style>
+	aside {
+		float: left;
+		width: 150px;
+		padding: 1rem;
+		border: 1px solid var(--background-a1);
+		border-radius: 0.5rem;
+	}
+
+	.content {
+		margin-left: calc(150px + 2rem);
+	}
+</style>
