@@ -1,39 +1,32 @@
 ---
+import Main from '@/layouts/Main.astro';
+
 // component script
-const profilePicture = "https://i.imgur.com/JPGFE75.jpg";
+const profilePicture = 'https://i.imgur.com/JPGFE75.jpg';
 ---
 
 <!-- component template -->
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro!</title>
-	</head>
-	<body>
-		<div class="profile">
-			<img
-				class="profile-picture"
-				width="100"
-				height="100"
-				src={profilePicture}
-				alt="profile picture"
-			/>
-			<div class="profile-details">
-				<h1>Frau Katarina</h1>
-				<h2>VP of Engineering at Acme.com</h2>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-					Debitis, iste perferendis. Esse necessitatibus quaerat
-					voluptatem? Doloribus eveniet ipsa maiores natus pariatur
-					quos saepe! Consequuntur in ipsa, libero nemo sequi sunt.
-				</p>
-			</div>
+<Main>
+	<div class="profile">
+		<img
+			class="profile-picture"
+			width="100"
+			height="100"
+			src={profilePicture}
+			alt="profile picture"
+		/>
+		<div class="profile-details">
+			<h1>Frau Katarina</h1>
+			<h2>VP of Engineering at Acme.com</h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+				Debitis, iste perferendis. Esse necessitatibus quaerat
+				voluptatem? Doloribus eveniet ipsa maiores natus pariatur quos
+				saepe! Consequuntur in ipsa, libero nemo sequi sunt.
+			</p>
 		</div>
-	</body>
-</html>
+	</div>
+</Main>
 
 <style>
 	.profile {
